@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Triwagon Hetel Booking</title>
+    <title>Triwagon Hotel Booking</title>
 
     <!-- jQuery -->
     <script
@@ -14,13 +14,7 @@
     ></script>
 
     <!-- Bootstrap 4-->
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-ggOyR0iXCbMQv3Xi
-pma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- fontAwesome -->
     <link
@@ -34,10 +28,143 @@ pma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
 
     <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./style.css">
 
   </head>
-  <body>
-    <script> "js/app.js"</script>
-  </body>
+
+  <div class="container mt-5">
+ 
+
+            <!--SearchBar-->
+           
+            <section class="row searchbar pt-2" >
+           
+            <div class="col-12">
+            
+           
+            <div class="input-group mb-4">
+           
+            <div class="input-group-prepend">
+           
+            <span class="input-group-text bg-white border-0"><i class="fas fa-search text-black-50"></i></span>
+           
+            </div>
+           
+   
+            <input list="cities-list" class="form-control border-0" id="cities" name="cities" aria-label="Location">
+
+            <datalist id="cities-list">
+                <!-- <option value="paris"></option>
+                <option value="Toulouse"></option>
+                <option value="Marsellie"></option> -->
+            </datalist>
+
+           
+            <div class="input-group-append">
+           
+            <button class="input-group-text bg-primary 
+           
+            text-white px-5 border-0">Search</button>
+           
+            </div>
+           
+            </div>
+            
+           
+            </div>
+           
+            </section>
+           
+            <!--Booking-->
+           
+            <section class="row booking">
+           
+            <div class="col-4 border" id="checkin">
+           
+            Check-in
+           
+            </div>
+           
+            <div class="col border" id="checkout">
+           
+            Check-out
+           
+            </div>
+           
+            <div class="col border">
+           
+            Room Types
+           
+            </div>
+           
+            </section>
+            
+           
+            <!--Features-->
+           
+            <section class="row features border">
+           
+            <div class="col-4 border">Price Range</div>
+           
+            <div class="col-2 border">Prop Type</div>
+           
+            <div class="col-2 border">Guest</div>
+           
+            <div class="col-4 border">Location</div>
+           
+            </section>
+            
+           
+            <!--Map-->
+           
+            <section class="row map border">
+           
+            <div class="col border">Map</div>
+           
+            <div class="col border">Sort By</div>
+           
+            </section>
+            
+           
+            <!--Hotels-->
+           
+            <section class="row hotels border">
+           
+            <!--Hotel-->
+           
+            <div class="col-12 row hotel m-0 p-0">
+           
+            <div class="col-3 border">Photo</div>
+           
+            <div class="col-4 border">Description</div>
+           
+            <div class="col-2 border">Deals</div>
+           
+            <div class="col-3 border">View Deals</div>
+            
+           
+            </div>
+           
+            </section>
+            
+           
+            <div class="container">
+           
+            <div class="class">
+           
+            <div class="col">
+           
+            <img style ="width:100%" src="./Assignment6.jpg" class="img-fluid">
+           
+            </div>
+           
+            </div>
+           
+            </div>
+           
+            </div>
+           
+            <script src="./app.js"></script>
+           
+           </body>
 </html>
